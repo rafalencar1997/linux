@@ -910,5 +910,10 @@ asmlinkage long sys_stack_pop(void);
 asmlinkage long sys_hello_world(void);
 asmlinkage long sys_stop_process(int pid);
 asmlinkage long sys_continue_process(void);
-
+asmlinkage long sys_write_number(int number);
+asmlinkage long sys_read_number(void);
+asmlinkage long sys_write_turn(int turn);
+asmlinkage long sys_read_turn(void);
+asmlinkage long sys_write_flag(int index, int value);
+asmlinkage long sys_read_flag(int index);
 #endif
